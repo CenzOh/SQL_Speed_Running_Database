@@ -9,5 +9,5 @@ GameCategory(*category_id*, gameName_fk, category, moderators, objectives, gamep
 Game(*game_id*, *gameName*, series, yearReleased, platform) \
 LeaderboardInfo(*Info_id*, gameName_fk, category_fk, platform) \
 Leaderboard(*leaderboard_id*, placement, playerName_fk, time, verified, publishDate, info_fk ) 
-# ER Design
+# Entity Relationship Design
 ![ERDesign](ERDesignV3.png)
