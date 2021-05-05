@@ -34,7 +34,6 @@ CREATE TABLE gamecategory (
 	, moderators VARCHAR(50)
 	, objectives VARCHAR(50)
 	, gameplayrestrictions VARCHAR(50)
-	--, CONSTRAINT fk_gamename FOREIGN KEY (gamename_fk) REFERENCES game(gamename) --fix me
 	, CONSTRAINT pk_gamecategory PRIMARY KEY(category_id, category) 
 	);
 
@@ -49,6 +48,4 @@ CREATE TABLE leaderboard (
 	, verified BOOLEAN
 	, publishdate VARCHAR(8)
 	, CONSTRAINT fk_player FOREIGN KEY (playername_fk) REFERENCES player(name)
-	--, CONSTRAINT fk_gamename FOREIGN KEY (gamename_fk) REFERENCES game(gamename) --fix me
-	--, CONSTRAINT fk_category FOREIGN KEY (category_fk) REFERENCES gamecategory(category)--fix me
 	);
